@@ -18,6 +18,9 @@ public class Ad {
 
     private String url;
 
+    public Ad() {
+    }
+
     @Override
     public String toString() {
         return "Ad{" +

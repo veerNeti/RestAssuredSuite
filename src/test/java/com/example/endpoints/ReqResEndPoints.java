@@ -20,4 +20,7 @@ public interface ReqResEndPoints {
     String CREATE_LOGIN="login";
     String DELAYED_RESPONSE="users?delay={timeouts}";
     String GET_ONE_PRODUCT="products/{productsid}";
+    String GET_PRODUCT_ID_Details="products";
+
+
 }

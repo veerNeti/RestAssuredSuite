@@ -13,24 +13,27 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Data {
-    private String last_name;
+    private String color;
+
+    private String year;
+
+    private String name;
 
     private String id;
 
-    private String avatar;
+    private String pantone_value;
 
-    private String first_name;
-
-    private String email;
+    public Data() {
+    }
 
     @Override
     public String toString() {
         return "Data{" +
-                "last_name='" + last_name + '\'' +
+                "color='" + color + '\'' +
+                ", year='" + year + '\'' +
+                ", name='" + name + '\'' +
                 ", id='" + id + '\'' +
-                ", avatar='" + avatar + '\'' +
-                ", first_name='" + first_name + '\'' +
-                ", email='" + email + '\'' +
+                ", pantone_value='" + pantone_value + '\'' +
                 '}';
     }
 }

@@ -12,7 +12,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class SearchPageResponse {
+public class Products {
     private String per_page;
 
     private String total;
@@ -25,6 +25,8 @@ public class SearchPageResponse {
 
     private String total_pages;
 
+    public Products() {
+    }
 
     @Override
     public String toString() {

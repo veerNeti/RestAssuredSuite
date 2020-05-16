@@ -63,29 +63,24 @@ HTTP Verbs:
 3. PUT  --> update a resource
 4. DELETE-> Delete a resource
 
+- more information can be obtained from https://github.com/rest-assured/rest-assured/wiki/Usage 
+
 #Serialization:
 Get a Json Object -->Convert into Pojo -->Use pojo in restAssured code to create new game.
 
 
-#Allure Reports:
-- Report will be generated to target/site/allure-maven-plugin folder. 
-  To open the report you can use the following command:
-    * `mvn io.qameta.allure:allure-maven:serve`
-- There is another way of generating the report. The generated report can be opened here "target/site/allure-maven-plugin/index.html".
-  The command to generate the report is the following:
-    * `mvn io.qameta.allure:allure-maven:report`
-        
-                
+             
  #XML Schema
  - Get an XML Object --> Generate an XSD SChema -->Place the schema in our project-->Run a test that validates against the schema             
                       
  #Json Schema
  - Get a JSON Object -->Generate a JSON SChema--> place the schema in project--> Run Tests against it. 
+    http://jsonschema.net/
  
  #JSON response to Pojo
  - Genereated a POJO class for payload using for serialization using http://pojo.sodhanalibrary.com/
  - Add a default constructor -->required by com.fasterxml.jackson.core
- - response.getBody( ).as(VideoGame.class); should parse the response to Pojo. 
+ - response.getBody( ).as(ClassName.class); should parse the response to Pojo. 
  
  #Meassure Response Time
  - Capture Response Time
@@ -105,7 +100,21 @@ Get a Json Object -->Convert into Pojo -->Use pojo in restAssured code to create
  
  
 
+#Allure Reports:
+- Report will be generated to target/site/allure-maven-plugin folder. 
+  To open the report you can use the following command:
+    * `mvn io.qameta.allure:allure-maven:serve`
+- There is another way of generating the report. The generated report can be opened here "target/site/allure-maven-plugin/index.html".
+  The command to generate the report is the following:
+    * `mvn io.qameta.allure:allure-maven:report`
+        
 
-##AllureReport:
-mvn io.qameta.allure:allure-maven:report
-mvn io.qameta.allure:allure-maven:serve
+
+@Epic
+@Features
+@Stories/@Story
+@Severity(SeverityLevel.BLOCKER)
+@Description("In this cool test we will check cool thing")
+@Step
+@Attachment
+@Link

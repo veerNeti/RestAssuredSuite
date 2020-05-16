@@ -4,10 +4,18 @@
     <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
     </listeners>
-    <test verbose="2" preserve-order="true" name="RestAssuredSuite">
+    <test verbose="2" preserve-order="true" name="FootBall API">
+        <parameter name="api" value="football"/>
         <classes>
             <class name="com.example.testscenarios.FootBallTestScenarios"/>
+        </classes>
+    </test>
+
+    <test verbose="5" preserve-order="true" name="ReqRes API">
+        <parameter name="api" value="ReqRes"/>
+        <classes>
             <class name="com.example.testscenarios.ReqResTestScenarios"/>
         </classes>
     </test>
+
 </suite>
