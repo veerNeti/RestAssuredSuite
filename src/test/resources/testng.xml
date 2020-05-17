@@ -14,7 +14,9 @@
     <test verbose="5" preserve-order="true" name="ReqRes API">
         <parameter name="api" value="ReqRes"/>
         <classes>
-            <class name="com.example.testscenarios.ReqResTestScenarios"/>
+            <class name="com.example.testscenarios.ReqResGetScenarios"/>
+            <class name="com.example.testscenarios.ReqResPostScenarios"/>
+
         </classes>
     </test>
 

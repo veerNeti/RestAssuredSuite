@@ -139,10 +139,9 @@ public class FootBallTestScenarios extends RunTheTestSuite {
         String id = given( ).pathParam("id", 2021)
                 .when( )
                 .get(FootBallEndPoints.LIST_ALL_TEAMS_FOR_PARTICULAR_COMPETITIONS)
-                .jsonPath( ).getString("teams.name[0]");
-        if(StringUtils.equalsIgnoreCase(id, "Arsenal FC"))
-            step("Team from a tournament played in 2021:", Status.PASSED);
-        step("Team from a tournament played in 2021:", Status.FAILED);
+                .jsonPath( ).getString("teams.name[0]").toString();
+        assertTrue(StringUtils.equalsIgnoreCase(id, "Arsenal FC"));
+
     }
 
 
