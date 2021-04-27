@@ -22,7 +22,7 @@
     </developers>
 
     <properties>
-        <jackson-core.version>2.10.3</jackson-core.version>
+        <jackson-core.version>2.12.1</jackson-core.version>
         <apache-poi.version>4.1.2</apache-poi.version>
         <commons-io.version>2.6</commons-io.version>
         <log4j.version>2.6.1</log4j.version>
